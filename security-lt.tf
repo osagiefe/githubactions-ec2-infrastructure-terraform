@@ -1,6 +1,6 @@
-#Create security group for Application LB to allow http and https 
-resource "aws_security_group" "alb_sg" {
-  name        = "alb-sg"
+#Create security group for launch template to allow http and ssh 
+resource "aws_security_group" "lt_sg" {
+  name        = "launchtemp-sg"
   vpc_id      = aws_vpc.vpc.id
 
   ingress {
@@ -13,8 +13,8 @@ resource "aws_security_group" "alb_sg" {
 
   ingress {
     description      = "https"
-    from_port        = 443
-    to_port          = 443
+    from_port        = 22
+    to_port          = 22
     protocol         = "tcp"
     cidr_blocks      = [var.cidr_open]
   }
@@ -28,6 +28,6 @@ resource "aws_security_group" "alb_sg" {
   }
 
   tags = {
-    Name = "alb-sg"
+    Name = "launchtemp-sg"
   }
 }
