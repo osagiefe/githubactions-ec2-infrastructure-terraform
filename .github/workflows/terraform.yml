@@ -35,6 +35,8 @@ jobs:
       uses: aws-actions/configure-aws-credentials@v1
       with:
         #role-to-assume: ${{ secrets.AWS_ROLE}}
+        AWS_BUCKET_NAME: ${{ secrets.AWS_BUCKET_NAME }}
+        AWS_BUCKET_KEY_NAME: ${{ secrets.AWS_BUCKET_KEY_NAME }}
         aws-region: ${{ secrets.AWS_REGION }}
         role-session-name: GitHub-OIDC-TERRAFORM
 
