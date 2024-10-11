@@ -16,7 +16,10 @@ permissions:
       pull-requests: write # for GitHub bot to comment PR
 env:
   TF_LOG: INFO
-  AWS_REGION: ${{ secrets.AWS_REGION }}      
+  AWS_REGION: ${{ secrets.AWS_REGION }}
+  AWS_ACCESS_KEY: ${{ secrets.AWSACCESSKEY }}
+  AWS_SECRET_ACCESS_KEY: ${{ secrets.AWSSECRETACCESSKEY }}
+  role-session-name: GitHub-OIDC-TERRAFORM      
 
 jobs:
   deploy:
@@ -31,14 +34,7 @@ jobs:
     - name: Checkout Repo
       uses: actions/checkout@v1
 
-    - name: Configure AWS credentials from AWS Account
-      uses: aws-actions/configure-aws-credentials@v1
-      with:
-        #role-to-assume: ${{ secrets.AWS_ROLE}}
-        AWS_ACCESS_KEY: ${{ secrets.AWSACCESSKEY }}
-        AWS_SECRET_ACCESS_KEY: ${{ secrets.AWSSECRETACCESSKEY }}
-        aws-region: ${{ secrets.AWS_REGION }}
-        role-session-name: GitHub-OIDC-TERRAFORM
+   
 
     - name: Setup Terraform
       uses: hashicorp/setup-terraform@v2
