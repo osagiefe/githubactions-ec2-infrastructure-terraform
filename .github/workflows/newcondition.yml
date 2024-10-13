@@ -74,14 +74,10 @@ jobs:
     - name: Terraform Apply
       id: apply 
       if: ${{ github.event.inputs.terraform_action == 'apply' }}
-     
-      
       run: terraform apply -auto-approve
       
-      - name: Terraform destroy
+    - name: Terraform destroy
       id: destroy 
       if: ${{ github.event.inputs.terraform_action == 'apply' }}
-     
-      
       run: terraform destroy -auto-approve
       #if: github.ref == 'refs/heads/main' && github.event_name == 'push'
