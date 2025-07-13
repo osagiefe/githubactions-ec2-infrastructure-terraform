@@ -79,6 +79,6 @@ jobs:
       
     - name: Terraform destroy
       id: destroy 
-      if: ${{ github.event.inputs.terraform_action == 'apply' }}
+      if: ${{ github.event.inputs.terraform_action == 'destroy' }}
       run: terraform destroy -auto-approve
       #if: github.ref == 'refs/heads/main' && github.event_name == 'push'
