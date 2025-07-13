@@ -1,4 +1,4 @@
-name: Automate HA EC2 Infrastructure Provisioning
+name: Automate EC2 Infrastructure Provisioning
 
 on:
   workflow_dispatch:
