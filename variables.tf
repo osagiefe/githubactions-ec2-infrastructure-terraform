@@ -32,7 +32,7 @@ variable "instance_type" {
 variable "ami" {
   type        = string
   description = "variable AMI ID"
-  default     = "ami-011ab7c70f5b5170a"
+  default     = "ami-0eb260c4d5475b901"
 }
 
 variable "avail_zone" {
