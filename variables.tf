@@ -45,3 +45,7 @@ variable "key_name" {
   type = string
   default = "devopskey2"
 }
+variable "region" {
+  type = string
+  default = "eu-west-2"
+}
