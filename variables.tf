@@ -29,21 +29,17 @@ variable "instance_type" {
   default     = "t2.micro"
 }
 
-variable "ami_id" {
+variable "ami" {
   type        = string
   description = "variable AMI ID"
   default     = "ami-011ab7c70f5b5170a"
 }
 
-variable "a_z_a" {
+variable "avail_zone" {
   type    = string
   default = "eu-west-2a"
 }
 
-variable "a_z_b" {
-  type    = string
-  default = "eu-west-2b"
-}
 
 variable "key_name" {
   type = string
