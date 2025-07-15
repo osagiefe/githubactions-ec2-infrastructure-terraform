@@ -154,7 +154,7 @@ jobs:
 
 <img width="2422" height="1358" alt="Image" src="https://github.com/user-attachments/assets/7251f0f6-0abe-4a02-a2d2-7c6fbdd03131" />
 
-#### go look for secreates and variables
+#### go look for secrete and variables
 
 <img width="2540" height="1140" alt="Image" src="https://github.com/user-attachments/assets/2eabd929-5cb8-4583-91c3-48d152960160" />
 
@@ -171,7 +171,7 @@ and secret keys
 
 #### As shown git push trigers github to kick start the github actions pipeline actions as shown below 
 
-<img width="2542" height="1330" alt="Image" src="https://github.com/user-attachments/assets/16f0b078-ce85-4d39-a4f1-0a8c56ab2773" />
+<img width="2532" height="1140" alt="Image" src="https://github.com/user-attachments/assets/0e633b9f-13c6-4240-a25f-1138fa2975bb" />
 
 
 <img width="2526" height="1272" alt="Image" src="https://github.com/user-attachments/assets/6e45fa42-d6bf-4783-a7d6-61e9e8b98642" />
@@ -183,7 +183,7 @@ and secret keys
 
 #### Step 4:The two ec2 instancces installed with github actions cicd
 
-
+<img width="1720" height="1302" alt="Image" src="https://github.com/user-attachments/assets/e073099f-48b0-443f-b300-0109ede2070a" />
 
 
 

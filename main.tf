@@ -8,7 +8,7 @@ resource "aws_instance" "web" {
   availability_zone           = var.avail_zone
        
   associate_public_ip_address = true
-  user_data                   = file("userdata.sh")
+  user_data                   = file("nginx.sh")
   tags = {
     Name = "web-server1"
   }
@@ -23,7 +23,7 @@ resource "aws_instance" "web2" {
   availability_zone           = var.avail_zone
        
   associate_public_ip_address = true
-  user_data                   = file("nginx.sh")
+  user_data                   = file("apache2.sh")
   tags = {
     Name = "web-server2"
   }
