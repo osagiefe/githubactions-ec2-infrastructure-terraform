@@ -181,19 +181,34 @@ and secret keys
 
 <img width="2544" height="1268" alt="Image" src="https://github.com/user-attachments/assets/5bed1a46-85d6-439a-ab9e-5f40a1b2bc3f" />
 
-#### Step 4:The two ec2 instancces installed with github actions cicd
+<img width="1720" height="1302" alt="Image" src="https://github.com/user-attachments/assets/e073099f-48b0-443f-b300-0109ede2070a" />
+
+#### Step 4:select the appropriate option for the terraform deployment 
+
+select apply or   
+       destroy
+
+<img width="2554" height="1130" alt="Image" src="https://github.com/user-attachments/assets/39aeb014-0a47-417f-9961-ff0d75b96e5e" />
+
+<img width="2480" height="1396" alt="Image" src="https://github.com/user-attachments/assets/070c68f0-d579-4d10-917d-7dd8d9414400" />
+
+
+
+#### Step 5:The two ec2 instancces installed with github actions cicd
+
+<img width="2576" height="732" alt="Image" src="https://github.com/user-attachments/assets/fa629921-b9c5-4003-afeb-0108aeaa56ad" />
 
 <img width="1720" height="1302" alt="Image" src="https://github.com/user-attachments/assets/e073099f-48b0-443f-b300-0109ede2070a" />
 
 
 
-#### output of the nginx webserver on the first server
+#### Step 6:output of the nginx webserver on the first server
 
-<img width="1976" height="1274" alt="Image" src="https://github.com/user-attachments/assets/296a9c45-d4cc-45c8-aacf-6fa0d51088c3" />
+<img width="2390" height="1100" alt="Image" src="https://github.com/user-attachments/assets/6c6cb7b0-52dc-423b-9b91-d1e432004a11" />
 
 #### output of the apache2 webserver on the second server
 
-<img width="1934" height="1292" alt="Image" src="https://github.com/user-attachments/assets/d078252c-d545-4d5f-8ab8-fb5697365402" />
+<img width="2404" height="1538" alt="Image" src="https://github.com/user-attachments/assets/605e5987-5c2e-48d7-a3ec-d6c6b575cab0" />
 
 
 
@@ -205,13 +220,13 @@ and secret keys
 
 #### run terraform destroy 
 
-<img width="1250" height="718" alt="Image" src="https://github.com/user-attachments/assets/3a8a66f6-40e7-4aa8-ad9f-57b41e5fde4f" />
+<img width="2514" height="1156" alt="Image" src="https://github.com/user-attachments/assets/2d23c374-c791-429b-959b-d4ea483494f5" />
 
 
-<img width="2288" height="1364" alt="Image" src="https://github.com/user-attachments/assets/070499cd-54c4-4d6b-a49e-2a6b2c64798e" />
+<img width="2516" height="1384" alt="Image" src="https://github.com/user-attachments/assets/1fca89d1-d771-4992-a6dc-325f0c9e785b" />
 
 
-<img width="2510" height="1132" alt="Image" src="https://github.com/user-attachments/assets/74874182-249d-42f9-b00a-f541bbdac9fd" />
 
+##### Now check the ec2 instances in aws they are all terminated
 
-<img width="2058" height="606" alt="Image" src="https://github.com/user-attachments/assets/18d16dca-6eba-4ac0-a600-351d896d9e91" />
+<img width="2596" height="894" alt="Image" src="https://github.com/user-attachments/assets/4a727e3b-96ac-4ce4-9f63-372047341ba0" />
