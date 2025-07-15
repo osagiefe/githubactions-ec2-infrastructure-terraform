@@ -84,67 +84,101 @@ on:
 
 permissions:
       id-token: write # for aws oidc connection
+
       contents: read   # for actions/checkout
+
       pull-requests: write # for GitHub bot to comment PR
 env:
   TF_LOG: INFO
+
   AWS_REGION: ${{ secrets.AWS_REGION }}
+
   AWS_ACCESS_KEY: ${{ secrets.AWSACCESSKEY }}
+
   AWS_SECRET_ACCESS_KEY: ${{ secrets.AWSSECRETACCESSKEY }}
+
   role-session-name: GitHub-OIDC-TERRAFORM      
 
 jobs:
   deploy:
+
     name: Terraform
+
     runs-on: ubuntu-latest
+
     defaults:
+
       run:
+
         shell: bash
+
         working-directory: .
     steps:
 
     - name: Checkout Repo
+
       uses: actions/checkout@v1
 
    
 
     - name: Setup Terraform
+
       uses: hashicorp/setup-terraform@v2
+
       with:
         
         terraform_version: 1.5.5
 
     - name: Terraform fmt
+
       id: fmt
+
       run: terraform fmt
 
     - name: Terraform Init
+
       id: init
+
       env:
         AWS_BUCKET_NAME: ${{ secrets.AWS_BUCKET_NAME }}
+
         AWS_BUCKET_KEY_NAME: ${{ secrets.AWS_BUCKET_KEY_NAME }}
+
       run: |
         rm -rf .terraform
+
         terraform init 
         
     - name: Terraform Validate
+
       id: validate
+
       run: terraform validate -no-color 
 
     - name: Terraform Plan
+
       id: plan
+
       run: terraform plan -no-color
 
     - name: Terraform Apply
+
       id: apply 
+
       if: ${{ github.event.inputs.terraform_action == 'apply' }}
+
       run: terraform apply -auto-approve
       
     - name: Terraform destroy
+
       id: destroy 
+
       if: ${{ github.event.inputs.terraform_action == 'destroy' }}
+
       run: terraform destroy -auto-approve
+
       #if: github.ref == 'refs/heads/main' && github.event_name == 'push'
+
 #### step 2: Set up Aws credentials in Github(Github integration with aws)
 
 #### Go to this pject in github and look for settings
@@ -157,6 +191,7 @@ jobs:
 
 #### click on actions and enter your aws credentials
 access key 
+
 and secret keys
 
 <img width="2434" height="1124" alt="Image" src="https://github.com/user-attachments/assets/f23f806d-94cc-4a44-967c-d5cf058978f4" />
@@ -183,6 +218,7 @@ and secret keys
 #### Step 4:select the appropriate option for the terraform deployment 
 
 select apply or   
+
        destroy
 
 <img width="2554" height="1130" alt="Image" src="https://github.com/user-attachments/assets/39aeb014-0a47-417f-9961-ff0d75b96e5e" />
