@@ -1,6 +1,3 @@
-# github-actions-ec2-infrastructure-terraform
-deployment of Aws ec2 infrastructure with terraform using github-actions to automate the cicd process workflow
-
 
 # Project Title: Github Actions Ec2 Infrastructure Provsioning with Terraform
 Deployment of Aws ec2 infrastructure with terraform using github-actions to automate the cicd process workflowThe project entails creating two ec2 instances and echa server will house nginx webser and apapce2 webser respctively.The project also have options for user to approve teraform deployment by choosing apply or  to destroy the resopurces created as the case may be 
