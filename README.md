@@ -2,7 +2,7 @@
 # Project Title: Github Actions Ec2 Infrastructure Provsioning with Terraform
 Deployment of Aws ec2 infrastructure with terraform using github-actions to automate the cicd process workflowThe project entails creating two ec2 instances and echa server will house nginx webser and apapce2 webser respctively.The project also have options for user to approve teraform deployment by choosing apply or  to destroy the resopurces created as the case may be
 
-<img width="1840" height="976" alt="Image" src="https://github.com/user-attachments/assets/4bbeccf3-da68-40ca-b779-e52398336f0f" />
+<img width="920" height="488" alt="Image" src="https://github.com/user-attachments/assets/095ff392-d068-4f20-a603-a734d108ed6f" />
 
 #### Project overview
 
@@ -46,6 +46,8 @@ https://github.com/clement2019/github-actions-ec2-infrastructure-terraform.git
 ============
 #### STAGE 1
 ==============
+<img width="920" height="488" alt="Image" src="https://github.com/user-attachments/assets/095ff392-d068-4f20-a603-a734d108ed6f" />
+
 #### step 1: Create the project in github and Clone it into yourproject root folder
 cd githubactions-aws-ec2-terraform-jenkins
  
