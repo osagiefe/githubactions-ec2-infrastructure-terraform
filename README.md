@@ -21,10 +21,6 @@ other activities will be happening on the github hosted runner itself. We can
 
 6. Create backend.tf files to configure and store terraform statefiles.
 
-
-
-<img width="792" height="808" alt="Image" src="https://github.com/user-attachments/assets/a09b95e8-9358-4792-b8bd-60b3e392297e" />
-
 #### Prerequisites:
 
 Before starting the project, ensure you have the following prerequisites:
