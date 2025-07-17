@@ -21,6 +21,7 @@ other activities will be happening on the github hosted runner itself. We can
 
 6. Create backend.tf files to configure and store terraform statefiles.
 
+
 #### Prerequisites:
 
 Before starting the project, ensure you have the following prerequisites:
@@ -42,7 +43,6 @@ https://github.com/clement2019/github-actions-ec2-infrastructure-terraform.git
 ============
 #### STAGE 1
 ==============
-<img width="920" height="488" alt="Image" src="https://github.com/user-attachments/assets/095ff392-d068-4f20-a603-a734d108ed6f" />
 
 #### step 1: Create the project in github and Clone it into yourproject root folder
 cd githubactions-aws-ec2-terraform-jenkins
