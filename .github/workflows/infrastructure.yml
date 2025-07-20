@@ -26,8 +26,8 @@ permissions:
 env:
   TF_LOG: INFO
   AWS_REGION: ${{ secrets.AWS_REGION }}
-  AWS_ACCESS_KEY: ${{ secrets.AWSACCESSKEY1 }}
-  AWS_SECRET_ACCESS_KEY: ${{ secrets.AWSSECRETACCESSKEY1 }}
+  AWS_ACCESS_KEY: ${{ secrets.awsaccesskey }}
+  AWS_SECRET_ACCESS_KEY: ${{ secrets.awssecretaccesskey }}
   role-session-name: GitHub-OIDC-TERRAFORM      
 
 jobs:
