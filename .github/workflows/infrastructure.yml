@@ -1,4 +1,4 @@
-name: Automate EC2 Infrastructure Provisioning
+name: Githubactions EC2 Infrastructure Provisioning
 
 on:
   workflow_dispatch:
