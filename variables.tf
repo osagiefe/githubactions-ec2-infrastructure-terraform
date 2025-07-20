@@ -43,9 +43,9 @@ variable "avail_zone" {
 
 variable "key_name" {
   type = string
-  default = "devopskey2"
+  default = "jenkins"
 }
 variable "region" {
   type = string
-  default = "eu-west-2"
+  default = "us-east-1"
 }
